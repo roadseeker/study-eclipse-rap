@@ -1,0 +1,410 @@
+Manifest-Version: 1.0
+Created-By: Maven Archiver 3.6.3
+Build-Jdk-Spec: 17
+Bundle-ManifestVersion: 2
+Bundle-Name: %Bundle-Name
+Bundle-Vendor: %Bundle-Vendor
+Bundle-SymbolicName: org.eclipse.rap.demo;singleton:=true
+Bundle-Version: 4.5.0.20250930-1058
+Bundle-Localization: plugin
+Require-Bundle: org.eclipse.rap.ui;bundle-version="[4.5.0,5.0.0)",org.ec
+ lipse.rap.ui.views;bundle-version="[4.5.0,5.0.0)",org.eclipse.rap.ui.fo
+ rms;bundle-version="[4.5.0,5.0.0)"
+Import-Package: jakarta.servlet.http;version="6.0.0"
+Export-Package: org.eclipse.rap.demo;version="4.5.0";x-internal:=true,or
+ g.eclipse.rap.demo.actions;version="4.5.0";x-internal:=true,org.eclipse
+ .rap.demo.editor;version="4.5.0";x-internal:=true,org.eclipse.rap.demo.
+ presentation;version="4.5.0";x-internal:=true,org.eclipse.rap.demo.wiza
+ rd;version="4.5.0";x-internal:=true
+Eclipse-SourceReferences: scm:git:https://github.com/eclipse-rap/org.ecl
+ ipse.rap;path="examples/org.eclipse.rap.demo";commitId=b7d137b321955cee
+ 74a15dd5390ca7f74011ee98
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=17))"
+
+Name: org/eclipse/rap/demo/DemoTreeViewActionDelegate$1.class
+SHA-256-Digest: 5EmwAkm/zoVVMyoHen8gpictn8fLFHT6WjJ36u2qhqo=
+
+Name: plugin.xml
+SHA-256-Digest: QBbr2QVMX15Hcm8ez+I60j8GWmCtzonJPa8xJD5kXuU=
+
+Name: org/eclipse/rap/demo/presentation/NavigationPaneContent.class
+SHA-256-Digest: snQF/BI41A/2ExDccyzFQxFvH06OLOGJkIairDWOM4I=
+
+Name: icons/presentation/top_center.gif
+SHA-256-Digest: kE8c4AubSiNtw51kUyQq7OVQwE962l5OSPgueIvP3s8=
+
+Name: org/eclipse/rap/demo/wizard/ComplaintsPage.class
+SHA-256-Digest: togOVpeRVszqoWF+sVrca0j8zMcI/9uJzcL4g9gpotY=
+
+Name: META-INF/maven/org.eclipse.rap/org.eclipse.rap.demo/pom.properties
+SHA-256-Digest: XwGL1TroC8CfDsplxOQM0ugDjH4r8jrm7xeVHg7s8gw=
+
+Name: icons/search.gif
+SHA-256-Digest: uohENWhwuAy5c6lB2xyv/p43V9a8apyY1NuhX332EBw=
+
+Name: org/eclipse/rap/demo/editor/FooEditorContributor.class
+SHA-256-Digest: 6cTR65IKwzbC30e/+e7yeMDGg9hkhK+uDvypx+26GdU=
+
+Name: launch/RAP Workbench Demo (Fancy).launch
+SHA-256-Digest: I+EOCKXgXZv3LZrAplgC6lQ0l+bwSTeUpBxc+buCHtI=
+
+Name: org/eclipse/rap/demo/wizard/ComplaintsPage$2.class
+SHA-256-Digest: jdqWktXM4gpowaJFdh6Q503Bajel1+QauvIEulwde1Y=
+
+Name: org/eclipse/rap/demo/DemoActionBarAdvisor$5.class
+SHA-256-Digest: BNXSZal8KEeIYNxmDTh2ZswSSovJooO8XscaAV5jNkw=
+
+Name: org/eclipse/rap/demo/DemoTableViewPart$ViewContentProvider.class
+SHA-256-Digest: bPrHjmR7I8wK6fsZp3dREEXXcePx0cqcMuSCOTmdEf4=
+
+Name: icons/presentation/middle_left.gif
+SHA-256-Digest: MAntlv+LQmXivSUBiH+tV6pcJh8EY9zDbOjZnW8BM4M=
+
+Name: org/eclipse/rap/demo/presentation/DemoPresentationWorkbenchWindowA
+ dvisor$1$3.class
+SHA-256-Digest: ISEydF6QfQ95laRITRClrkcWSOSZL8Mr6DJs7yNAQlg=
+
+Name: org/eclipse/rap/demo/presentation/DemoToolBarManager.class
+SHA-256-Digest: lhVzN9hfrDMr8xPGGnKL8CJ5usLxoUyvWtaPbtOVGRU=
+
+Name: org/eclipse/rap/demo/presentation/StackPopup$2.class
+SHA-256-Digest: m3ni9ywOfaWjPBIUG985EoR5wCU2myl6o1rLXhJdZks=
+
+Name: org/eclipse/rap/demo/presentation/StackPresentationImpl$2.class
+SHA-256-Digest: LA8CclwS7hMkV/fHAjaxSy5RXdg5JWce/re99sFr3ok=
+
+Name: org/eclipse/rap/demo/Perspective.class
+SHA-256-Digest: 0uVNS52RSiZBK3HcR4cMHrwAni7RfOicLuddYH3eHh0=
+
+Name: org/eclipse/rap/demo/wizard/DemoImport.class
+SHA-256-Digest: BdL4NDd/9ME9Npu9A8FOTnOO6AEs0goK8p4O+eqi8tg=
+
+Name: icons/ttt.gif
+SHA-256-Digest: QaXG4hpHb4Ww+XS3A0k3Rfw7mhs+ANLJ4Hg9nuYbdxY=
+
+Name: org/eclipse/rap/demo/wizard/SurveyWizard.class
+SHA-256-Digest: OVNiONRXmJIlXveQ97sJ8L0jA96+FUsPElFZz2aX/Bo=
+
+Name: icons/register.gif
+SHA-256-Digest: yiVql2uJLzUiZ71s2dt8KIsnZ0QPDtwe7Ak/FYeu9fQ=
+
+Name: org/eclipse/rap/demo/DemoActionBarAdvisor$2.class
+SHA-256-Digest: izUzcPe39RAAylZn1VRv+Spo3gGmPwYuq+1zhtfpKD4=
+
+Name: icons/browser.gif
+SHA-256-Digest: cjj4zblQ32xgsaO1dtbULZDQid76KF3oo2PsE5c7f0w=
+
+Name: org/eclipse/rap/demo/presentation/DemoToolBarContributionItem$Tool
+ BarManager.class
+SHA-256-Digest: BNWcf7aW6J2f3RueKoL8fujkxM6x0IoyaiERYCgwVwo=
+
+Name: org/eclipse/rap/demo/presentation/DemoToolBarContributionItem.clas
+ s
+SHA-256-Digest: r5KzEwDoTQ+xqk1PlXZBImyDsIYdwOlSWTw6KSL7zrE=
+
+Name: META-INF/maven/org.eclipse.rap/org.eclipse.rap.demo/pom.xml
+SHA-256-Digest: l0DFP9TzXNuE9KdcYgwwJcdDfqBsvOal+fo1AaYRwJ4=
+
+Name: org/eclipse/rap/demo/wizard/MoreInformationPage$1.class
+SHA-256-Digest: PGbQdjI7v+J3UUt5lASHHI1CVGLyw+sND4XzDkkM/RA=
+
+Name: org/eclipse/rap/demo/DemoTreeViewPart$TreeParent.class
+SHA-256-Digest: tks+/p6H5GONWpIdn0mqd6gwR8Yojxu4O0JAatkd1Vg=
+
+Name: org/eclipse/rap/demo/presentation/StackPopup.class
+SHA-256-Digest: YeAeLcp+8gZ371R87DV80FYDRRyzrY7t2aRadcYCxx0=
+
+Name: org/eclipse/rap/demo/DemoApplication.class
+SHA-256-Digest: sRc240jzDiMvaw81Ywd2k5SVkXalAAIprAfGPWyEUsM=
+
+Name: icons/test-100x50.png
+SHA-256-Digest: HyI0CHuyW0Dg1v0fQiOe9ghcKJ861d1MxjugguLgPPo=
+
+Name: launch/RAP Workbench Demo (Business).launch
+SHA-256-Digest: +aNkw1UWsa+ilBh4cZWKzORaR1brlrAbs4wPs83m8QA=
+
+Name: org/eclipse/rap/demo/presentation/StackPresentationImpl$2$1.class
+SHA-256-Digest: VGbu+LROg8urVMjhhXk1PPgj2RLHrxO4Yzei26inXfg=
+
+Name: icons/test-50x100.png
+SHA-256-Digest: oeYHWrsTTA8gjD5CZegqxePCn/GXUmIvluSnR9ykSDE=
+
+Name: org/eclipse/rap/demo/presentation/DemoPresentationWorkbenchWindowA
+ dvisor$1.class
+SHA-256-Digest: ZibWzaBhf24AOqb71oMr9H29IHgM2h+QxyApX+yGQ5U=
+
+Name: org/eclipse/rap/demo/DemoSelectionViewPart$1.class
+SHA-256-Digest: Cay4SkrEH36JrDJXCUAx6D+uFR75iVuVZFFLZaaRU5g=
+
+Name: org/eclipse/rap/demo/editor/BazEditor.class
+SHA-256-Digest: xNOrOw1AAYV9oVqWMD+QXiX+41H4d0jrdKBkHzWtjXQ=
+
+Name: icons/presentation/bottom_left.gif
+SHA-256-Digest: 7qJewi1l9Wm1qVeoC5dZ1GyfjaXvRGlkXSCYfP8eHC0=
+
+Name: org/eclipse/rap/demo/presentation/PresentationFactory.class
+SHA-256-Digest: 48putYHA5yohB/k7SytR2OL+Ax8CAUge7xl8zFAp7BA=
+
+Name: org/eclipse/rap/demo/DemoChartViewPart.class
+SHA-256-Digest: hqq4r06Os5c1uBGSp1JV4C9tD22/i+i/FvAQWxeoPK4=
+
+Name: icons/presentation/bottom_right.gif
+SHA-256-Digest: QWCtTInWTVUZkc+M8kQeF214fh41GCLpd0kla2dDZmI=
+
+Name: org/eclipse/rap/demo/DemoChartViewPart$1.class
+SHA-256-Digest: kaSLbwkBpMB27jLoUFGK5RcC1vOV37MB1zcH6aut/MM=
+
+Name: org/eclipse/rap/demo/presentation/DemoPresentationWorkbenchWindowA
+ dvisor.class
+SHA-256-Digest: CuX6f54a+dx76Q8UrTmqHbFXAqeTd2VLevwFvtoZpq0=
+
+Name: org/eclipse/rap/demo/DemoTreeViewPart$TreeObject.class
+SHA-256-Digest: SAj36sMpX1I/fHvj8gg1QSJbUJ6mNvnDoQp4ISIXRWg=
+
+Name: org/eclipse/rap/demo/actions/JobAction$1.class
+SHA-256-Digest: VX0y5BE/BA74qMX8EepusHtxMTTwj89MSU06dgKpHuw=
+
+Name: org/eclipse/rap/demo/wizard/DemoExport.class
+SHA-256-Digest: e6Nh5w95cf+RGzrZb7ciK3eMFZBgvpVsHql7IyQ/0Q0=
+
+Name: org/eclipse/rap/demo/DemoWorkbenchWindowAdvisor.class
+SHA-256-Digest: 8IpzVkwJq1zbd+bXNgN66pG9G5eX6heSCMjh/g+18lA=
+
+Name: org/eclipse/rap/demo/actions/SampleAction.class
+SHA-256-Digest: 9/8vhGPcuRyxvCCgqZgDZC1b6P39RQCWyOJEqdclkH8=
+
+Name: org/eclipse/rap/demo/presentation/DemoPresentationWorkbenchWindowA
+ dvisor$1$1.class
+SHA-256-Digest: USfTaq01uM4LrGsAMLjpIVQNxHdBl3wiTpezzkKtLf0=
+
+Name: org/eclipse/rap/demo/wizard/DemoImport$DemoImportWizardPage.class
+SHA-256-Digest: LXVbUR86mtXjO0AmQ+Udv1LQds6tM/w3be+IHbDFe/g=
+
+Name: org/eclipse/rap/demo/presentation/DemoPresentationWorkbenchWindowA
+ dvisor$2.class
+SHA-256-Digest: jo21yobN68o5Z5z96ML6bExOgaDTAUcClcEwfrS3oow=
+
+Name: org/eclipse/rap/demo/wizard/MoreInformationPage.class
+SHA-256-Digest: S7/vDQzLhaxM9SlX+zHXWTRKIkatIytgMY9qH2Mlpis=
+
+Name: org/eclipse/rap/demo/DemoSelectionViewPart.class
+SHA-256-Digest: TX/Kv5Y79xHH9F6XR+M58GZLOvSiNLiE7GdjVaez8Fc=
+
+Name: icons/error-decorator.png
+SHA-256-Digest: jxSPTldm4hHHaMar5FDCLMcbQcsopapNVDNpUgxEBkk=
+
+Name: org/eclipse/rap/demo/DemoTreeViewActionDelegate.class
+SHA-256-Digest: 1TdHB5zJfS6bSoap1wc/3poj7USnfLRX1yMOHYtzy5Y=
+
+Name: icons/presentation/middle_center.gif
+SHA-256-Digest: 9W5aLlWLjSW5yeh+8CirGO7Cqu2rgeWyrMT4RukAYcU=
+
+Name: icons/status.gif
+SHA-256-Digest: TzU6i8z6QndoxM3xkT4tLn9N+Z20JdnAQmlTK13QAeE=
+
+Name: org/eclipse/rap/demo/editor/BarEditor.class
+SHA-256-Digest: Ny3+1ywHJJUI0O4Z6a4iPEf2BBZdkriwjljAb1x1l3U=
+
+Name: org/eclipse/rap/demo/presentation/StackPopup$1.class
+SHA-256-Digest: J1lBjYka1TPIb0IooKQtpQTFyvxRlJyXQr1V9BRgm08=
+
+Name: body.html
+SHA-256-Digest: nq6bwgNPXHVDvrIUkikNJlrmxbYCBY6IsJpAOwaP1G0=
+
+Name: icons/progress_ok.gif
+SHA-256-Digest: d5prb/yKun7zH57uln1SkAjF+eXSZQeR+e1g5IpKX9A=
+
+Name: org/eclipse/rap/demo/presentation/DemoPresentationWorkbenchWindowA
+ dvisor$1$1$1.class
+SHA-256-Digest: Dl/DVXlxvgTVa2UexzZcpYzT9QZAlcPgzhzzgyFIE7M=
+
+Name: org/eclipse/rap/demo/wizard/ComplaintsPage$1.class
+SHA-256-Digest: bWHXwZuFhVrtCkg4qRskwGsEFdgpxs1ReRFm75Yzmgw=
+
+Name: org/eclipse/rap/demo/editor/BazEditor$1.class
+SHA-256-Digest: UTDD//oVXTSoSRbOK9WSWJXJo1E1nux9f4Ua7oSEeoo=
+
+Name: icons/presentation/middle_right.gif
+SHA-256-Digest: tOin2it/If2vk7pBF4rPLmTh8gUTPYEqTBrq0ZTPnQw=
+
+Name: org/eclipse/rap/demo/wizard/DemoExport$DemoExportWizardPage.class
+SHA-256-Digest: q2OTGbzBKAx5mbX6SvST98Cb43+UcFKN6BZLZB90sbc=
+
+Name: org/eclipse/rap/demo/presentation/DemoPresentationWorkbenchWindowA
+ dvisor$1$2.class
+SHA-256-Digest: M1DDmg5M5zm7Gsdh+Oi0zzdLoFk8PayKSgFNueLr9Jc=
+
+Name: icons/presentation/banner_rounded_left.png
+SHA-256-Digest: CZ8mWdqJHqAgVLz5KlM40C4R0BSEqvS1w8Tbt5FM99k=
+
+Name: icons/lockkey.gif
+SHA-256-Digest: EYExBZlSSn1abmFMcb3CZ7HMLsknho2EA/YNyA5360g=
+
+Name: org/eclipse/rap/demo/presentation/DemoPreferencePage.class
+SHA-256-Digest: uAmrlMApw3Sd4xBO4lWmNMARCPJRohzmuvY7SczuF28=
+
+Name: org/eclipse/rap/demo/DemoActionBarAdvisor$4.class
+SHA-256-Digest: fcCg48BnCqqftZ9rtL7O6bwAe6Z23Mi33d7I8nKL7nk=
+
+Name: icons/presentation/banner_rounded_right.png
+SHA-256-Digest: 2wHBBn10SwUXsaeBeP2sWL/gpUhETHrFmJLjt5DP9nw=
+
+Name: org/eclipse/rap/demo/presentation/DemoCoolBarManager.class
+SHA-256-Digest: GAACr0ID5sK/7Er5rdMMDDqXKgKxKGyOdngWNladNM8=
+
+Name: org/eclipse/rap/demo/presentation/ActionBarButton.class
+SHA-256-Digest: KGnOcifx6/jihyS3qlFl89nHb9zAhr2+G3XCTQRJfL0=
+
+Name: icons/presentation/top_left.gif
+SHA-256-Digest: k5A3yjXnRxmEFej1RSZ0ctQWCtALDL4GcQpCth72qx0=
+
+Name: icons/favicon2.ico
+SHA-256-Digest: n8PHgbGt0JTBN1e8iqTz4x2ePGoygpNcAvIvp8cGEWo=
+
+Name: launch/RAP Workbench Demo.launch
+SHA-256-Digest: fhxIxoMAHzndiYWAtCtK1VMDx1qK13M1wWNiiKgL3DI=
+
+Name: org/eclipse/rap/demo/DemoBrowserViewPart.class
+SHA-256-Digest: k0nYJ6xgN05/DF3Gx3+RnELY2G9gABT/3vlKyC6Azro=
+
+Name: org/eclipse/rap/demo/DemoTreeViewPart.class
+SHA-256-Digest: y6ocMq7Y47iG6WC0KHB5TgbGFGjIGtZZ5smftiee0B8=
+
+Name: plugin.properties
+SHA-256-Digest: DrtCdIKlzhWti2lS5r20/1bJG7SjBccrX2ldzZCtpN0=
+
+Name: org/eclipse/rap/demo/DemoActionBarAdvisor$1.class
+SHA-256-Digest: jFijumiJQid42Uh9olZUgBHVpitE5T9dexhSWigLOQ0=
+
+Name: org/eclipse/rap/demo/presentation/StackPresentationImpl$1.class
+SHA-256-Digest: v+iqA/5JeoAk4REcF9fEdyfpoh5Vu+clxk4DkZFNDcQ=
+
+Name: icons/login.gif
+SHA-256-Digest: YAofxWaP63SXg1YYHYkDNkFCdceSeMjBiFyuH2mYbxw=
+
+Name: icons/presentation/top_right.gif
+SHA-256-Digest: jOZoeamMlTIkiyxbEF3/Vxpd4xvdngFm3X3vfwQjyQE=
+
+Name: org/eclipse/rap/demo/DemoTreeViewPart$TreeViewerContentProvider.cl
+ ass
+SHA-256-Digest: 5YX0t8VrmmYJN9BHP7I7w45NxkKe4vP8kHWSrFYbFGs=
+
+Name: org/eclipse/rap/demo/DemoTreeViewPart$ViewLabelProvider.class
+SHA-256-Digest: z5Bvs4peljABhqG35u02uXWLiyrUYC1AbNWmAAqdRtk=
+
+Name: org/eclipse/rap/demo/presentation/ActionBar.class
+SHA-256-Digest: wG5FNlT4wuxPkL8ZaIObkB1APgqNI5XPtlOVtGMlQmM=
+
+Name: org/eclipse/rap/demo/DemoTableViewPart.class
+SHA-256-Digest: oAKVLQSFfxBBoqzLlZcn4EOWAWCK2LfEe9J9VJRvo3I=
+
+Name: org/eclipse/rap/demo/presentation/Images.class
+SHA-256-Digest: yPXUWoBJ6W/Cfy61sZldWUBfl4+AkeyDN8/orAOcpNc=
+
+Name: org/eclipse/rap/demo/editor/FooEditor$1.class
+SHA-256-Digest: 6OvQkPvwmoSOEsZYtab9wvM7qtlROHmP1RXZi6N9+zM=
+
+Name: icons/internal_browser.gif
+SHA-256-Digest: PNe/8d86MLax1wFLxYFfxqaHnMxTBlE5JpbY9JZZkyg=
+
+Name: org/eclipse/rap/demo/editor/BarEditor$1.class
+SHA-256-Digest: E2CiNZdmFmDoFH5Gr2XIjUuDbVwatJqotb5gbmKD5XQ=
+
+Name: icons/help.gif
+SHA-256-Digest: K8TNWtrr8CbiAyz1PLTnN1fVgXWoSCZmXiKFU418/Jg=
+
+Name: org/eclipse/rap/demo/editor/FooEditor.class
+SHA-256-Digest: tXFY9hFCa7NDWyyWEOXoX4WkLpxMD/bsE6J49eqfnvc=
+
+Name: org/eclipse/rap/demo/resources/ExternalJsResource.class
+SHA-256-Digest: VTcncYcOKEg3S+puQxX/IN7QvoUeWIbrOTGoTwP3vX8=
+
+Name: icons/presentation/bottom_center.gif
+SHA-256-Digest: D9W2YPs/tqP8S1ZX3jwL1BVjKlT7m0GmmSvpXX5a6FE=
+
+Name: org/eclipse/rap/demo/actions/JobAction.class
+SHA-256-Digest: WymhaR0jixzOmohbJ+tzLb3Xk8YRPwuoFrWOTfmkTeg=
+
+Name: launch/RAP Workbench Demo (OSGi).launch
+SHA-256-Digest: HKztclFseQEFc/O9DCYXys1MZWTJMN9G/zTtS16pKho=
+
+Name: org/eclipse/rap/demo/resources/eclipse.svg
+SHA-256-Digest: 87cm1zM4j4Vu6tutg1h4P7gyPtMtGHG0GinsOxMRbm4=
+
+Name: org/eclipse/rap/demo/DemoFormViewPart.class
+SHA-256-Digest: SuauHjP3u8ElB+T5fmGkxpCVfFXxxUgJyGlFKT9V6A0=
+
+Name: org/eclipse/rap/demo/DemoTableViewPart$ViewLabelProvider.class
+SHA-256-Digest: Cb7JBiH8VdpG/3+15DUkIBs5P3KXH03m6oh1U4agP9Q=
+
+Name: org/eclipse/rap/demo/presentation/StackPresentationImpl.class
+SHA-256-Digest: 5NlkBqENZTb2Y3dqe7d2bkPMmhw//M7e9ahsnDnz5i4=
+
+Name: org/eclipse/rap/demo/DemoActionBarAdvisor$3.class
+SHA-256-Digest: xmrMeI66ed/s8kJx0e3RSRjbOjsIsLM+CRno9RFx3TQ=
+
+Name: org/eclipse/rap/demo/wizard/ThanksPage.class
+SHA-256-Digest: dicU7cXo47oAw3Wx4GxHyhlpaNIiGI7D+IlVl1mw3fQ=
+
+Name: org/eclipse/rap/demo/DemoChartViewPart$Bar.class
+SHA-256-Digest: 4rATB70NWAoYN2jg67p3IOcR4R/4oeiry3+lJJnbTWA=
+
+Name: org/eclipse/rap/demo/actions/JobActionWithDialog.class
+SHA-256-Digest: jIuD9fMUBR2Bqbl8RuqhXnxU1S12UZRGpAKAGoHZjBw=
+
+Name: org/eclipse/rap/demo/actions/JobActionWithDialog$1.class
+SHA-256-Digest: LJ9CYJqMdkDxJcbWJ6W4lmwSGtNWPwYjoGJ4EjGd+TE=
+
+Name: org/eclipse/rap/demo/presentation/NavigationPaneViewer$Selector.cl
+ ass
+SHA-256-Digest: 1k6Wq1k/YaJt2xgixfn1R/ub+9fe2NyaInGaLytj1cA=
+
+Name: icons/contact.gif
+SHA-256-Digest: auMMz/11pU74xcqlHF2lpY081XKLDUwcf8OQK0vByqU=
+
+Name: icons/info.gif
+SHA-256-Digest: 6nPRf91TzBsPUUy87cFJlZao7wPcoshhj1AHz/5pMQ8=
+
+Name: org/eclipse/rap/demo/DemoActionBarAdvisor.class
+SHA-256-Digest: Loh9CMjL9UKRfqSsu6yBgRXzU5iJxPw7Yg77HB5iQlw=
+
+Name: about.html
+SHA-256-Digest: 1fuYr0bu6NsJZCAmSom5QtnvnV0Cg8DwLn77Dd1Ql24=
+
+Name: org/eclipse/rap/demo/DemoTreeViewPart$BrokenTreeObject.class
+SHA-256-Digest: RTSpYDLw6LbnAMUe1o+PfjmmlQd1l8QUGfIY7TIvUWs=
+
+Name: org/eclipse/rap/demo/DemoWorkbenchAdvisor.class
+SHA-256-Digest: n2v8lGJ4s1uWuC9K3RxZVMI+j1NMPgSS+yvFGDfvkLk=
+
+Name: org/eclipse/rap/demo/editor/FooEditorInput.class
+SHA-256-Digest: lnMpPV3H7QDOJDy2xT8hJXEkphkMmGtu8CReJqIEaWM=
+
+Name: org/eclipse/rap/demo/PlanningPerspective.class
+SHA-256-Digest: XqYTcm454qFzaAFvgGUh9MLSK4O4zdzeCk/bLGxxkTk=
+
+Name: icons/pview.gif
+SHA-256-Digest: 36XOU/14TG0MeV9q99kKkq2qECvI9GyqzEXZA1D1E9U=
+
+Name: icons/sample.gif
+SHA-256-Digest: 6jMftqI7oSaDQ6w4VCjJEtTiJvYpMr0Z1u+lWgsbkjY=
+
+Name: org/eclipse/rap/demo/presentation/NavigationPaneViewer.class
+SHA-256-Digest: 2WzWMdFoHFgnrFNluOkjibWNtBsRXXlK5Fq9hfUHs9A=
+
+Name: icons/presentation/banner_bg.png
+SHA-256-Digest: 0TmmG6dqQULGLHKuIS6D3467sfJ5t+Zc0S6ybErggKI=
+
+Name: org/eclipse/rap/demo/presentation/DemoPresentationWorkbenchAdvisor
+ .class
+SHA-256-Digest: YLIUa+8Lwni1T+LfEse1Mf5JDJXfaFM7b4qXZyCr0js=
+
+Name: org/eclipse/rap/demo/DemoWorkbench.class
+SHA-256-Digest: YRzI5s1Ak89zC72c8WZprKC/VZiAbd756cvYXOQnv1A=
+
+Name: org/eclipse/rap/demo/resources/ImageResource.class
+SHA-256-Digest: qj+m2IJUC8kgVqvvSfNaVlW9O3Y7VIZoKTy7k54RvqA=
+
+Name: org/eclipse/rap/demo/DemoBrowserViewPart$1.class
+SHA-256-Digest: BPNTYvOCcbo+wf9TBl0h5Y8iIIosEJGi5CT1mgss+zk=
+

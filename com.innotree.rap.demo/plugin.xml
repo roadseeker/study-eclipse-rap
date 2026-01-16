@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+     <!-- EntryPoint 등록 -->
+     <extension point="org.eclipse.rap.ui.entrypoint">
+        <entrypoint
+              id="com.innotree.rap.demo.entrypoint"
+              path="/"
+              class="com.innotree.rap.demo.DemoWorkbench">
+        </entrypoint>
+     </extension>
+
+     <!-- Perspective 등록 -->
+     <extension point="org.eclipse.ui.perspectives">
+        <perspective
+              class="com.innotree.rap.demo.DemoPerspective"
+              id="com.innotree.rap.demo.perspective"
+              name="Demo Perspective"/>
+     </extension>
+
+     <!-- View 등록 -->
+     <extension point="org.eclipse.ui.views">
+        <view
+              class="com.innotree.rap.demo.views.DemoTreeView"
+              id="com.innotree.rap.demo.views.tree"
+              name="Demo Tree View"/>
+        <view
+              class="com.innotree.rap.demo.views.DemoTableView"
+              id="com.innotree.rap.demo.views.table"
+              name="Demo Table View"/>
+        <view
+        	 class="com.innotree.rap.demo.views.DemoSelectionView"
+        	 id="com.innotree.rap.demo.views.selection"
+        	 name="Selection View" />
+        <view
+              class="com.innotree.rap.demo.views.DemoFormView"
+              id="com.innotree.rap.demo.views.form"
+              name="Form View"/>
+     </extension>
+
+  </plugin>
+
