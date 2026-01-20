@@ -10,9 +10,11 @@ import org.eclipse.jface.action.Separator;
 import org.eclipse.jface.action.ToolBarContributionItem;
 import org.eclipse.jface.action.ToolBarManager;
 import org.eclipse.jface.dialogs.MessageDialog;
+import org.eclipse.jface.resource.ImageDescriptor;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.widgets.Shell;
 import org.eclipse.ui.IEditorInput;
+import org.eclipse.ui.ISharedImages;
 import org.eclipse.ui.IWorkbenchActionConstants;
 import org.eclipse.ui.IWorkbenchWindow;
 import org.eclipse.ui.PartInitException;
@@ -22,6 +24,7 @@ import org.eclipse.ui.actions.ActionFactory.IWorkbenchAction;
 import org.eclipse.ui.actions.ContributionItemFactory;
 import org.eclipse.ui.application.ActionBarAdvisor;
 import org.eclipse.ui.application.IActionBarConfigurer;
+import org.eclipse.ui.plugin.AbstractUIPlugin;
 import org.osgi.framework.Bundle;
 import org.osgi.framework.Constants;
 
@@ -53,8 +56,15 @@ public class DemoActionBarAdvisor extends ActionBarAdvisor {
 	
 	@Override
 	protected void makeActions(IWorkbenchWindow window) {
+		// 아이콘 로드
+		ImageDescriptor exitIcon = AbstractUIPlugin.imageDescriptorFromPlugin("com.innotree.rap.demo", "icons/ttt.gif");
+		ImageDescriptor aboutIcon = AbstractUIPlugin.imageDescriptorFromPlugin("com.innotree.rap.demo", "icons/help.gif");
+		
+		
+		
 		//File 메뉴 액션
 		exitAction = ActionFactory.QUIT.create(window);
+		exitAction.setImageDescriptor(exitIcon); //아이콘 설정
 		register(exitAction);
 		
 		importAction = ActionFactory.IMPORT.create(window);
@@ -84,6 +94,9 @@ public class DemoActionBarAdvisor extends ActionBarAdvisor {
 			}
 		};
 		
+		newEditorAction.setText("New Editor");
+		newEditorAction.setImageDescriptor(window.getWorkbench().getSharedImages().getImageDescriptor(ISharedImages.IMG_TOOL_NEW_WIZARD));
+		
 		//Window 메뉴 - Show View
 		showViewMenuMgr = new MenuManager("Show View", "showView");
 		showViewMenuMgr.add(ContributionItemFactory.VIEWS_SHORTLIST.create(window));
@@ -107,6 +120,7 @@ public class DemoActionBarAdvisor extends ActionBarAdvisor {
 		
 		aboutAction.setText("About");
 		aboutAction.setId("com.innotree.rap.demo.about");
+		aboutAction.setImageDescriptor(aboutIcon);  // 아이콘 설정
 		register(aboutAction);
 	}
 	

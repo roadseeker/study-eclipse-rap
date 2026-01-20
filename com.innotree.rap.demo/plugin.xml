@@ -37,6 +37,10 @@
               class="com.innotree.rap.demo.views.DemoFormView"
               id="com.innotree.rap.demo.views.form"
               name="Form View"/>
+        <view
+                id="org.eclipse.ui.views.ProgressView"
+                class="org.eclipse.ui.ExtensionFactory:progressView"
+                name="Progress"/>
      </extension>
      
      <!-- Editor 등록 -->
@@ -57,16 +61,34 @@
                 label="Demo Actions"
                 visible="true">
              <action
+                   class="com.innotree.rap.demo.actions.SampleAction"
+                   icon="icons/sample.gif"
                    id="com.innotree.rap.demo.actions.sample"
                    label="Sample Action"
                    menubarPath="help/additions"
                    toolbarPath="additions"
-                   tooltip="Execute Sample Action"
-                   class="com.innotree.rap.demo.actions.SampleAction">
+                   tooltip="Execute Sample Action">
+             </action>
+             <action
+                   class="com.innotree.rap.demo.actions.JobAction"
+                   icon="icons/progress_ok.gif"
+                   id="com.innotree.rap.demo.actions.job"
+                   label="Run Background Job"
+                   menubarPath="help/additions"
+                   toolbarPath="additions"
+                   tooltip="Run Background Job">
+             </action>
+             <action
+                   class="com.innotree.rap.demo.actions.JobActionWithDialog"
+                   icon="icons/info.gif"
+                   id="com.innotree.rap.demo.actions.jobWithDialog"
+                   label="Run Job with Dialog"
+                   menubarPath="help/additions"
+                   toolbarPath="additions"
+                   tooltip="Run Job with Progress Dialog">
              </action>
           </actionSet>
        </extension>
-     
 
   </plugin>
 
