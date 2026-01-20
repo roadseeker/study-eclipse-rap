@@ -38,6 +38,35 @@
               id="com.innotree.rap.demo.views.form"
               name="Form View"/>
      </extension>
+     
+     <!-- Editor 등록 -->
+     <extension point="org.eclipse.ui.editors">
+        <editor
+              id="com.innotree.rap.demo.editor"
+              name="Demo Editor"
+              class="com.innotree.rap.demo.editor.DemoEditor"
+              default="true"
+              extensions="demo">
+        </editor>
+     </extension>
+     
+     <!-- ActionSet 등록 -->
+       <extension point="org.eclipse.ui.actionSets">
+          <actionSet
+                id="com.innotree.rap.demo.actionSet"
+                label="Demo Actions"
+                visible="true">
+             <action
+                   id="com.innotree.rap.demo.actions.sample"
+                   label="Sample Action"
+                   menubarPath="help/additions"
+                   toolbarPath="additions"
+                   tooltip="Execute Sample Action"
+                   class="com.innotree.rap.demo.actions.SampleAction">
+             </action>
+          </actionSet>
+       </extension>
+     
 
   </plugin>
 
