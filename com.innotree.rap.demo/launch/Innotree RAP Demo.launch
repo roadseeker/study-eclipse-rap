@@ -7,7 +7,7 @@
     <stringAttribute key="bootstrap" value=""/>
     <stringAttribute key="checked" value="[NONE]"/>
     <booleanAttribute key="clearConfig" value="false"/>
-    <booleanAttribute key="clearws" value="false"/>
+    <booleanAttribute key="clearws" value="true"/>
     <stringAttribute key="configLocation" value="${workspace_loc}/.metadata/.plugins/org.eclipse.pde.core/Innotree RAP Demo"/>
     <booleanAttribute key="default" value="true"/>
     <booleanAttribute key="default_auto_start" value="true"/>
@@ -73,7 +73,6 @@
         <setEntry value="org.eclipse.jetty.util@default:default"/>
         <setEntry value="org.eclipse.osgi.util@default:default"/>
         <setEntry value="org.eclipse.osgi@1:true"/>
-        <setEntry value="org.eclipse.rap.design.example@default:default"/>
         <setEntry value="org.eclipse.rap.http.jetty@default:default"/>
         <setEntry value="org.eclipse.rap.http.registry@default:default"/>
         <setEntry value="org.eclipse.rap.http.servlet@default:default"/>
