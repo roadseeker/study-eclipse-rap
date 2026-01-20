@@ -45,6 +45,10 @@
                 class="com.innotree.rap.demo.views.DemoBrowserView"
                 id="com.innotree.rap.demo.views.browser"
                 name="Browser View"/>
+        <view
+                class="com.innotree.rap.demo.views.DemoChartView"
+                id="com.innotree.rap.demo.views.chart"
+                name="Chart View"/>
           
      </extension>
      
