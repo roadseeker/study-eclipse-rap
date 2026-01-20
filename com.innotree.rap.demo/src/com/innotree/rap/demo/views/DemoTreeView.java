@@ -24,11 +24,18 @@ public class DemoTreeView extends ViewPart {
 	// 트리 노드 클래스
 	public static class TreeNode {
 		private String name;
+		private String url; //추가
 		private TreeNode parent;
 		private List<TreeNode> children = new ArrayList<>();
 		
 		public TreeNode (String name) {
 			this.name = name;
+		}
+		
+		// URL에 있는 생성자 추가
+		public TreeNode (String name, String url) {
+			this.name = name;
+			this.url = url;
 		}
 		
 		public String getName() {
@@ -55,6 +62,16 @@ public class DemoTreeView extends ViewPart {
 		@Override
 		public String toString() {
 			return name;
+		}
+		
+		// URL getter 추가
+		public String getUrl() {
+			return url;
+		}
+		
+		// URL setter 추가
+		public void setUrl(String url) {
+			this.url = url;
 		}
 	}
 	
@@ -151,12 +168,15 @@ public class DemoTreeView extends ViewPart {
 		getSite().setSelectionProvider(viewer);
 	}
 
+	/**
+	 * 샘플 데이터
+	 */
 	private TreeNode[] createSampleData() {
 		//Root 노드
-		TreeNode root = new TreeNode("Innotree");
+		TreeNode root = new TreeNode("Innotree", "https://www.innotree.com");
 		//자식 노드들 
-		TreeNode child1 = new TreeNode("RAP Demo");
-        TreeNode child2 = new TreeNode("Running on JDK21");
+		TreeNode child1 = new TreeNode("InnoQuartz", "https://innoquartz.com/");
+        TreeNode child2 = new TreeNode("Wikipedia", "https://www.wikipedia.org/");
         TreeNode child3 = new TreeNode("Features");
 		
         root.addChild(child1);
@@ -164,9 +184,9 @@ public class DemoTreeView extends ViewPart {
         root.addChild(child3);
         
         // Features 하위 노드
-        child3.addChild(new TreeNode("TreeView"));
-        child3.addChild(new TreeNode("TableView"));
-        child3.addChild(new TreeNode("SelectionView"));
+        child3.addChild(new TreeNode("데이터 컨설팅", "https://www.innotree.com/html/ko/services_data"));
+        child3.addChild(new TreeNode("AI 빅데이터", "https://www.innotree.com/html/ko/services_ai"));
+        child3.addChild(new TreeNode("커머스/유통", "https://www.innotree.com/html/ko/services_commerce"));
 		
 		return new TreeNode[]{ root };
 	}

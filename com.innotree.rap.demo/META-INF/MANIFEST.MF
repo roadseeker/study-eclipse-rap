@@ -5,7 +5,8 @@ Bundle-SymbolicName: com.innotree.rap.demo;singleton:=true
 Bundle-Version: 1.0.0.qualifier
 Require-Bundle: org.eclipse.rap.ui;bundle-version="4.5.0",
  org.eclipse.rap.ui.forms;bundle-version="4.5.0",
- org.eclipse.rap.ui.views;bundle-version="4.5.0"
+ org.eclipse.rap.ui.views;bundle-version="4.5.0",
+ org.eclipse.core.runtime
 Import-Package: jakarta.servlet.http;version="6.1.0"
 Bundle-Vendor: INNOTREE
 Automatic-Module-Name: com.innotree.rap.demo

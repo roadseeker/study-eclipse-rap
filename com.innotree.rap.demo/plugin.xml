@@ -41,6 +41,11 @@
                 id="org.eclipse.ui.views.ProgressView"
                 class="org.eclipse.ui.ExtensionFactory:progressView"
                 name="Progress"/>
+        <view
+                class="com.innotree.rap.demo.views.DemoBrowserView"
+                id="com.innotree.rap.demo.views.browser"
+                name="Browser View"/>
+          
      </extension>
      
      <!-- Editor 등록 -->
