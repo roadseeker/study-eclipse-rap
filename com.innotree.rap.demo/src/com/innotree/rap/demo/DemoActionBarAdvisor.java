@@ -12,8 +12,10 @@ import org.eclipse.jface.action.ToolBarManager;
 import org.eclipse.jface.dialogs.MessageDialog;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.widgets.Shell;
+import org.eclipse.ui.IEditorInput;
 import org.eclipse.ui.IWorkbenchActionConstants;
 import org.eclipse.ui.IWorkbenchWindow;
+import org.eclipse.ui.PartInitException;
 import org.eclipse.ui.PlatformUI;
 import org.eclipse.ui.actions.ActionFactory;
 import org.eclipse.ui.actions.ActionFactory.IWorkbenchAction;
@@ -23,12 +25,17 @@ import org.eclipse.ui.application.IActionBarConfigurer;
 import org.osgi.framework.Bundle;
 import org.osgi.framework.Constants;
 
+import com.innotree.rap.demo.editor.DemoEditorInput;
+
 public class DemoActionBarAdvisor extends ActionBarAdvisor {
 	
 	//File 메뉴 액션
 	private IWorkbenchAction exitAction;
 	private IWorkbenchAction importAction;
 	private IWorkbenchAction exportAction;
+	private IWorkbenchAction saveAction;
+	private IWorkbenchAction saveAllAction;
+	private Action	newEditorAction;
 	
 	//Window 메뉴 액션
 	private MenuManager showViewMenuMgr;
@@ -36,6 +43,8 @@ public class DemoActionBarAdvisor extends ActionBarAdvisor {
 	
 	//Help 메뉴 액션
 	private Action aboutAction;
+	
+	private static int editorCount = 0;
 
 	public DemoActionBarAdvisor(IActionBarConfigurer configurer) {
 		super(configurer);
@@ -53,6 +62,27 @@ public class DemoActionBarAdvisor extends ActionBarAdvisor {
 		
 		exportAction = ActionFactory.EXPORT.create(window);
 		register(exportAction);
+		
+		saveAction = ActionFactory.SAVE.create(window);
+		register(saveAction);
+		
+		saveAllAction = ActionFactory.SAVE_ALL.create(window);
+		register(saveAllAction);
+		
+		//New Editor 액션
+		newEditorAction = new Action() {
+			@Override
+			public void run() {
+				try {
+					editorCount++;
+					DemoEditorInput input = new DemoEditorInput("Document" + editorCount + ".demo");
+					window.getActivePage().openEditor((IEditorInput)input, "com.innotree.rap.demo.editor");
+					
+				}catch (PartInitException e) {
+					
+				}
+			}
+		};
 		
 		//Window 메뉴 - Show View
 		showViewMenuMgr = new MenuManager("Show View", "showView");
@@ -84,6 +114,11 @@ public class DemoActionBarAdvisor extends ActionBarAdvisor {
 	protected void fillMenuBar(IMenuManager menuBar) {
 		//File 메뉴
 		MenuManager fileMenu = new MenuManager("File", IWorkbenchActionConstants.M_FILE);
+		fileMenu.add(newEditorAction);
+		fileMenu.add(new Separator());
+		fileMenu.add(saveAction);
+		fileMenu.add(saveAllAction);
+		fileMenu.add(new Separator());
 		fileMenu.add(importAction);
         fileMenu.add(exportAction);
         fileMenu.add(new Separator());
@@ -108,9 +143,11 @@ public class DemoActionBarAdvisor extends ActionBarAdvisor {
         // 메인 툴바
         IToolBarManager toolbar = new ToolBarManager(SWT.FLAT | SWT.RIGHT);
         coolBar.add(new ToolBarContributionItem(toolbar, "main"));
-
-        toolbar.add(aboutAction);
+        
+        toolbar.add(newEditorAction);
+        toolbar.add(saveAction);
         toolbar.add(new Separator());
+        toolbar.add(aboutAction);
         toolbar.add(exitAction);
     }
 	
